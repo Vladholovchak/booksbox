@@ -1,5 +1,5 @@
 <h1>Books</h1>
-<%= link_to 'New Book', new_book_path %>
+<%= link_to 'New Book', new_book_path, class:"btn btn-sm btn-outline-secondary" %>
 <table>
   <tr>
     <th>Title</th>
@@ -15,9 +15,9 @@
       <td><%= book.author %></td>
       <td><%= book.pages %></td>
       <td><%= book.price %></td>
-      <td><%= link_to 'Show', book_path(book) %></td>
-      <td><%= link_to 'Edit', edit_book_path(book) %></td>
-      <td><%= link_to 'Destroy', book_path(book),
+      <td><%= link_to 'Show', book_path(book), class:"btn btn-sm btn-outline-secondary" %></td>
+      <td><%= link_to 'Edit', edit_book_path(book), class:"btn btn-sm btn-outline-secondary" %></td>
+      <td><%= link_to 'Destroy', book_path(book),class:"btn btn-sm btn-outline-secondary",
                       method: :delete,
                       data: { confirm: 'Are you sure?' } %></td>
     </tr>
